@@ -12,7 +12,7 @@ public final class Student extends Person {
     private String major;
     private double gpa;
     
-    Student(String name, int age, String gender, String major, double gpa){
+    public Student(String name, int age, String gender, String major, double gpa){
         super(name, age, gender);
         this.major = major;
         this.gpa = gpa;
@@ -34,7 +34,7 @@ public final class Student extends Person {
         this.gpa = gpa;
     }
     
-    void biodataStudent(){
+    public void biodataStudent(){
         System.out.println("Nama: " + super.getName());
         System.out.println("Umur: " + super.getAge());
         System.out.println("Jenis Kelamin: " + super.getGender());

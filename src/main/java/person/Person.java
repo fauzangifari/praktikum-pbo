@@ -13,13 +13,13 @@ public class Person {
     private int age;
     private String gender;
     
-    Person(String name, int age, String gender){
+    public Person(String name, int age, String gender){
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
     
-    void sayHello(){
+    public void sayHello(){
         System.out.println("Halo perkenalkan, " + this.name + ", umur saya " + this.age);
     }
 

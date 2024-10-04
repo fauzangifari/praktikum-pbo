@@ -12,7 +12,7 @@ public final class Teacher extends Person{
     int yearOfExperience;
     double salary;
     
-    Teacher(String name, int age, String gender, int yearOfExperience, double salary){
+    public Teacher(String name, int age, String gender, int yearOfExperience, double salary){
         super(name, age, gender);
         this.yearOfExperience = yearOfExperience;
         this.salary = salary;
@@ -34,9 +34,7 @@ public final class Teacher extends Person{
         this.salary = salary;
     }
     
-    
-    
-    void biodataTeacher(){
+    public void biodataTeacher(){
         System.out.println("Nama: " + super.getName());
         System.out.println("Umur: " + super.getAge());
         System.out.println("Jenis Kelamin: " + super.getGender());
